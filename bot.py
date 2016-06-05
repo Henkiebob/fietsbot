@@ -21,8 +21,9 @@ def send_message():
     min_temp = temperature.get('temp_min')
     max_temp = temperature.get('temp_max')
     grade = calculate_grade(max_temp, speed)
-    
-    message = "Hallo! Fiets Paulusma hier, met een windkracht van %s en een temperatuur van %s geef ik het fietsweer een: %s" % (speed, max_temp,grade)
+
+    #message = "Het is weer is namelijk %s" % text_status
+    #message = "Hallo! Fiets Paulusma hier, met een windkracht van %s en een temperatuur van %s geef ik het fietsweer een: %s" % (speed, max_temp,grade)
     bot.sendMessage(chat_id=chat_id, text=message)
 
 
